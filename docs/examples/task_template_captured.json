@@ -1,0 +1,12 @@
+{
+  "task": {
+    "priority": 5,
+    "taskName": "A01agv测试1",
+    "templateId": 35610,
+    "robotGroupId": 2,
+    "robotId": 11
+  },
+  "templateList": [
+    35610
+  ]
+}

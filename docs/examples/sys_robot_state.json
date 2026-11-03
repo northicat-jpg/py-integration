@@ -1,0 +1,60 @@
+{
+  "code": 200,
+  "msg": "操作成功",
+  "data": [
+    {
+      "dictCode": 143,
+      "dictSort": 0,
+      "dictLabel": "启用",
+      "dictValue": "0",
+      "dictType": "sys_robot_state",
+      "cssClass": null,
+      "listClass": null,
+      "isDefault": "N",
+      "status": "0",
+      "createBy": "system",
+      "createTime": "2022-04-07 21:46:16",
+      "updateBy": "system",
+      "updateTime": "2022-04-10 11:05:28",
+      "remark": null,
+      "params": {},
+      "default": false
+    },
+    {
+      "dictCode": 144,
+      "dictSort": 2,
+      "dictLabel": "停用",
+      "dictValue": "2",
+      "dictType": "sys_robot_state",
+      "cssClass": null,
+      "listClass": null,
+      "isDefault": "N",
+      "status": "0",
+      "createBy": "system",
+      "createTime": "2022-04-07 21:46:26",
+      "updateBy": null,
+      "updateTime": null,
+      "remark": null,
+      "params": {},
+      "default": false
+    },
+    {
+      "dictCode": 145,
+      "dictSort": 4,
+      "dictLabel": "故障",
+      "dictValue": "4",
+      "dictType": "sys_robot_state",
+      "cssClass": null,
+      "listClass": null,
+      "isDefault": "N",
+      "status": "0",
+      "createBy": "system",
+      "createTime": "2022-04-07 21:46:32",
+      "updateBy": null,
+      "updateTime": null,
+      "remark": null,
+      "params": {},
+      "default": false
+    }
+  ]
+}

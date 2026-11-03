@@ -1,0 +1,27 @@
+# secrets / local config
+.env
+.env.local
+config/config.config
+dist/config/config.config
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# build artifacts
+build/
+dist/
+*.spec
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+Desktop.ini
+
+# local smoke leftovers
+once_test.txt

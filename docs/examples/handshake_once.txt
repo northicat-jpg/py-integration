@@ -1,0 +1,2 @@
+{"robot":"01","start_point_id":100,"end_point_id":200}
+{}

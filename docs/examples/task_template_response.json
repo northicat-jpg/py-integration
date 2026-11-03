@@ -1,0 +1,19 @@
+{
+  "code": 200,
+  "msg": "操作成功",
+  "data": {
+    "taskId": 1,
+    "taskName": "A01agv测试1",
+    "status": "0",
+    "taskIdentifier": "SL",
+    "priority": 5,
+    "robotId": 11,
+    "robotTypeId": 3,
+    "robotGroupId": 2,
+    "deptId": 100,
+    "dispatchStrategyId": 1,
+    "routeSchemeId": 1,
+    "createBy": "system",
+    "createTime": "2026-10-15T13:06:25.873+08:00"
+  }
+}

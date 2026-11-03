@@ -1,0 +1,12 @@
+{
+  "task": {
+    "priority": 5,
+    "taskName": "{task_name}",
+    "templateId": "{template_id}",
+    "robotGroupId": 2,
+    "robotId": "{robot_id}"
+  },
+  "templateList": [
+    "{template_id}"
+  ]
+}
