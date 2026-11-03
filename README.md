@@ -44,8 +44,11 @@ python main.py
 | `main.py` | 入口：`python main.py` |
 | `config/config.example.config` | 环境 + TCP 解析 + 任务模板 |
 | `config_editor/` | 小工具：可视化改 `[robots]` / CALL·LEAVE 路由（免手改 config） |
-| `build_exe.bat` | 一键打成 `dist/RCSBridge.exe` + `dist/RCSConfigEditor.exe` |
-| `dist/` | 发布目录（exe + `config/`，见其中说明） |
+| `build_exe.bat` | 一键打成 `dist/RCSBridge.exe` + `dist/RCSConfigEditor.exe`（Windows） |
+| `build_linux.sh` | Linux 打包脚本（Ubuntu 22.04 / GitHub Actions 同用） |
+| `dist/` | Windows 发布目录（exe + `config/`） |
+| `dist_ubuntu22/` | Ubuntu 22.04 可执行文件（由 Actions 产物下载） |
+| `.github/workflows/build-ubuntu.yml` | Actions：在 ubuntu-22.04 上打包两份二进制 |
 | `src/bridge.py` | TCP 服务 / `--once` |
 | `src/tcp_parser.py` | 成帧与声明式解析 |
 | `src/rcs_client.py` | 登录 + 任务 POST |

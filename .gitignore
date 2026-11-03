@@ -14,6 +14,7 @@ venv/
 # build artifacts
 build/
 dist/
+dist_ubuntu22/
 *.spec
 
 # IDE / OS

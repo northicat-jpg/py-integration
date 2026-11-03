@@ -1,0 +1,51 @@
+name: Build Ubuntu 22.04 binaries
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/build-ubuntu.yml"
+      - "main.py"
+      - "src/**"
+      - "config_editor/**"
+      - "packaging/**"
+      - "requirements.txt"
+      - "build_linux.sh"
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install system deps (tk for config editor)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            python3-tk \
+            libtk8.6 \
+            tcl8.6 \
+            tk8.6
+
+      - name: Install Python deps
+        run: |
+          python -m pip install -U pip
+          python -m pip install -r requirements.txt "pyinstaller>=6.0"
+
+      - name: Build Linux binaries
+        run: bash build_linux.sh
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ubuntu22.04-binaries
+          path: dist_ubuntu22/
+          if-no-files-found: error
+          retention-days: 30
